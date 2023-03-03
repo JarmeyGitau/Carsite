@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="./css/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="label">User Login</h1>
+      <form class="login_form" method="post" name="form" onsubmit="validated()">
+        <div class="font">Email or phone</div>
+        <input
+          autocomplete="off"
+          type="text"
+          placeholder="Enter Address"
+          name="email"
+        />
+        <div id="email_error">Please enter your Email or phone</div>
+        <div class="font font2">Password</div>
+        <input type="password" placeholder="password" name="password" />
+        <div id="password_error">Please enter your Password</div>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>
